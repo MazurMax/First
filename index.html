@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Опросник</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="core.modul.js"></script>
+    <script src="dashbourd.controller.js"></script>
+</body>
+</head>
+
+<body ng-app="myApp">
+<div ng-controller="DashbordCtrl">
+    {{message}}
+
+<div ng-repeat="(blockName, todoList) in todos">
+    <div>
+        {{blockName}}
+    </div>
+    <div ng-repeat="todo in todoList">
+        {{$parent.$index + 1}}.{{$index + 1}} {{todo}}
+    </div>
+</div>
+</div>
+ 
+
+ 
+
+
+
+ 
+    <!--<div id="firstDiv">
+        <p class="greetings">Hi!</p>
+    </div>
+    <div>
+        <input value="Пройти тест" id="testStart" type="button">
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script1.js"></script>-->
+</body>
+
+</html>
