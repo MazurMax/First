@@ -15,14 +15,15 @@
 <div ng-controller="DashbordCtrl">
     {{message}}
 
+
 <div ng-repeat="(blockName, todoList) in todos">
     <div>
         {{blockName}}
     </div>
-    <div ng-repeat="todo in todoList">
-        {{$parent.$index + 1}}.{{$index + 1}} {{todo}}
+        <div ng-repeat="todo in todoList">
+            {{$parent.$index + 1}}.{{$index + 1}} {{todo}}
+        </div>
     </div>
-</div>
 </div>
  
 
